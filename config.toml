@@ -1,0 +1,21 @@
+# Choose 'backup' or 'restore'
+action = "backup"
+
+[s3]
+endpoint = "https://s3.eu-central-003.backblazeb2.com"
+key = ""
+secret = ""
+bucket_name = ""
+max_upload_rate = "5MB"
+
+[[email_accounts]]
+email_address = "account1@example.de"
+password = "imap-account-password"
+imap_server = "mail.example.de"
+encryption_password = "password-for-storing-mails-encrypted"
+
+[[email_accounts]]
+email_address = "account2@example2.com"
+password = "imap-account-password"
+imap_server = "mail.example2.com"
+encryption_password = "password-for-storing-mails-encrypted"
