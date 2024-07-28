@@ -2,7 +2,7 @@
 name = "mail2s3"
 version = "0.1.0"
 description = "Used to back up imap accounts (individual emails) to S3 API compatible storage. Includes Encryption & restore functionality."
-authors = ["maulay-it"]
+authors = ["sahelea1"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
