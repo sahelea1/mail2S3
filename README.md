@@ -40,7 +40,7 @@ This project provides a secure way to backup your emails to S3-compatible storag
 2. Edit `config.toml` with your specific settings:
    - Set the `action` to either "backup" or "restore"
    - Fill in your S3 credentialremove commit completely from historsys and settings
-   - Add your email account details
+   - Add your email account details (just duplicate the whole section to backup more than one account.)
    - Set the maximum upload rate (e.g., "5MB" or "1GB")
 
 Example `config.toml`:
@@ -60,6 +60,16 @@ email_address = "your-email@example.com"
 password = "your-email-password"
 imap_server = "imap.example.com"
 encryption_password = "your-encryption-password"
+
+[[email_accounts]]
+email_address = "your-email2@example2.com"
+password = "your-email-password"
+imap_server = "imap.example2.com"
+encryption_password = "your-encryption-password"
+
+.
+.
+.
 ```
 
 ## Usage
